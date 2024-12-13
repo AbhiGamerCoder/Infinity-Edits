@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews</title>
+</head>
+<body>
+    <style>
+        .reviews {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.review {
+    margin: 20px auto;
+    max-width: 600px;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+blockquote {
+    font-style: italic;
+}
+
+form {
+    margin-top: 40px;
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+header {
+    background-color: #333;
+    color: white;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+    </style>
+   <header>
+    <nav class="navbar">
+        <h1 class="logo">Infinity Edits</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="oopp.html">About Us</a></li>
+            <li><a href="our service.html">Services</a></li>
+            <li><a href="review.html">Reviews</a></li>
+            <li><a href="contact us.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <section id="reviews" class="reviews">
+        <h2>Customer Reviews</h2>
+        <div id="review-list">
+            <!-- fake reviews -->
+            <div class="review">
+                <blockquote>
+                    "Amazing work! The editing was quick and professional. Highly recommend!"
+                    <cite>- Omen V.</cite>
+                </blockquote>
+            </div>
+            <div class="review">
+                <blockquote>
+                    "I loved the final product. The team understood my vision perfectly!"
+                    <cite>- Divya K.</cite>
+                </blockquote>
+            </div>
+        </div>
+
+        <h3>Submit Your Review</h3>
+        <form id="review-form">
+            <label for="reviewer-name">Name:</label>
+            <input type="text" id="reviewer-name" required>
+
+            <label for="review-text">Your Review:</label>
+            <textarea id="review-text" rows="4" required></textarea>
+
+            <button type="submit">Submit Review</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Infinity Edits.pvt 2024 .</p>
+    </footer>
+</body>
+</html>
